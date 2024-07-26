@@ -174,13 +174,10 @@ return {
       require("neoscroll").setup()
     end,
   },
-  "NvChad/nvcommunity",
-
-  { import = "nvcommunity.editor.telescope-undo" },
   {
     "nvim-telescope/telescope.nvim",
     opts = {
-      extensions_list = { "fzf", "terms", "nerdy", "media" },
+      extensions_list = { "fzf", "terms", "zoxide" },
 
       extensions = {
         media = {
@@ -191,8 +188,6 @@ return {
 
     dependencies = {
       { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
-      "2kabhishek/nerdy.nvim",
-      "dharmx/telescope-media.nvim",
     },
   },
   {

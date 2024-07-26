@@ -38,3 +38,4 @@ map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "nvimtree toggle windo
 map("n", "<C-n>", "<cmd>NvimTreeFocus<CR>", { desc = "nvimtree focus window" })
 map("n", "<C-p>", require("fzf-lua").files, { desc = "Fzf Files" })
 map("n", "<leader>fm", "<cmd>Telescope zoxide list<cr>", { desc = "Find directories" })
+map("n", "<leader>fe", "<cmd>Telescope file_browser<cr>", { desc = "Open file browser" })
