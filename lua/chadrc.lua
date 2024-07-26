@@ -5,9 +5,9 @@
 local M = {}
 
 M.ui = {
-  theme = "everforest",
+  theme = "onedark",
   cmp = {
-    style = "atom_colored",
+    style = "default",
   },
   nvdash = {
     load_on_startup = true,
@@ -31,7 +31,6 @@ M.ui = {
       { "  Bookmarks", "Spc m a", "Telescope marks" },
       { "  Themes", "Spc t h", "Telescope themes" },
       { "  Mappings", "Spc c h", "NvCheatsheet" },
-      { "󰇥  Yazi", "Spc y", "Yazi" },
     },
   },
   statusline = {
@@ -39,10 +38,7 @@ M.ui = {
   },
   hl_override = {
     -- Comment = { italic = true },
-    -- ["@comment"] = { italic = true },
-    LspInlayHint = { fg = "#4e5665", bg = "NONE" },
-    FloatBorder = { link = "TelescopeBorder" },
-    NvimTreeRootFolder = { link = "TelescopeBorder" },
+    ["@comment"] = { italic = true },
   },
 }
 
