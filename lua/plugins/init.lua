@@ -5,10 +5,29 @@ local function has_words_before()
   return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match "%s" == nil
 end
 return {
-  -- lua with lazy.nvim
-  -- lua with lazy.nvim
+  {
+    "jvgrootveld/telescope-zoxide",
+    lazy = true,
+    specs = {
+      {
+        "nvim-telescope/telescope.nvim",
+        dependencies = {
+          "jvgrootveld/telescope-zoxide",
+        },
+      },
+    },
+  },
+  {
+    "ibhagwan/fzf-lua",
+    event = "BufWritePre",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require("fzf-lua").setup {}
+    end,
+  },
   {
     "hrsh7th/nvim-cmp",
+    event = "VeryLazy",
     opts = {
       -- NOTE: this function does not merge in place and needs to be
       --       returned at the end of the function
@@ -89,6 +108,7 @@ return {
   },
   {
     "christoomey/vim-tmux-navigator",
+    event = "VeryLazy",
     cmd = {
       "TmuxNavigateLeft",
       "TmuxNavigateDown",
@@ -148,6 +168,7 @@ return {
 
   {
     "karb94/neoscroll.nvim",
+    event = "VeryLazy",
     keys = { "<C-d>", "<C-u>" },
     config = function()
       require("neoscroll").setup()
