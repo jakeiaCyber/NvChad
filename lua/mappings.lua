@@ -17,6 +17,8 @@ map("n", "<leader>q", "<Cmd>qa<CR>", { desc = "Quit Window" })
 map("n", "<C-a>", "ma<S-g><S-v>gg0", { desc = "Choose All" })
 map("n", "j", 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', { expr = true })
 map("n", "k", 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', { expr = true })
+map("i", "jj", "<Esc>")
+map("i", "jk", "<Esc>")
 -- Switch buffers
 map("n", "<C-h>", "<C-w>h", { desc = "Buffer switch left" })
 map("n", "<C-l>", "<C-w>l", { desc = "Buffer switch right" })
