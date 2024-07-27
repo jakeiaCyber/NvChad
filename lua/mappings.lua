@@ -3,13 +3,9 @@ require "nvchad.mappings"
 -- add yours here
 
 local map = vim.keymap.set
-local del = vim.keymap.del
+local unmap = vim.keymap.del
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
-del("i", "<C-h>")
-del("i", "<C-j>")
-del("i", "<C-k>")
-del("i", "<C-l>")
 map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 map("n", "H", "^")
 map("n", "L", "$")
@@ -37,3 +33,6 @@ map("n", "<C-n>", "<cmd>NvimTreeFocus<CR>", { desc = "nvimtree focus window" })
 map("n", "<C-p>", require("fzf-lua").files, { desc = "Fzf Files" })
 map("n", "<leader>fm", "<cmd>Telescope zoxide list<cr>", { desc = "Find directories" })
 map("n", "<leader>fe", "<cmd>Telescope file_browser<cr>", { desc = "Open file browser" })
+
+map("n", "tw", "<cmd>vsp<cr>", { desc = "Split window" })
+map("n", "tv", "<cmd>sp<cr>", { desc = "Split window" })
