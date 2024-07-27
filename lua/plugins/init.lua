@@ -69,10 +69,14 @@ return {
   },
   {
     "max397574/better-escape.nvim",
-    event = "BufWritePre",
-    config = function()
-      require("better_escape").setup()
-    end,
+    event = "VeryLazy",
+    opts = {
+      timeout = 300,
+      default_mappings = false,
+      mappings = {
+        i = { j = { k = "<Esc>", j = "<Esc>" } },
+      },
+    },
   },
   { "wakatime/vim-wakatime", lazy = false },
   {

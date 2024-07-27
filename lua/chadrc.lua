@@ -8,7 +8,7 @@ M.ui = {
   theme = "everforest",
   -- transparency = true,
   cmp = {
-    style = "default",
+    style = "atom_colored",
   },
   nvdash = {
     load_on_startup = true,
