@@ -135,6 +135,13 @@ return {
     event = "VeryLazy",
     dependencies = { "MunifTanjim/nui.nvim" },
     opts = {
+      views = {
+        mini = {
+          win_options = {
+            winblend = 0,
+          },
+        },
+      },
       lsp = {
         -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
         override = {

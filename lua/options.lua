@@ -4,9 +4,8 @@ require "nvchad.options"
 
 local o = vim.o
 o.cursorlineopt = "both" -- to enable cursorline!
-o.signcolumn = "yes"
 o.number = false
-o.relativenumber = false
+o.signcolumn = "yes"
 o.guifont = "JetBrainsMono Nerd Font:h16"
 
 vim.g.neovide_hide_mouse_when_typing = true

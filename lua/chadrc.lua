@@ -6,6 +6,7 @@ local M = {}
 
 M.ui = {
   theme = "everforest",
+  -- transparency = true,
   cmp = {
     style = "default",
   },
@@ -34,7 +35,8 @@ M.ui = {
     },
   },
   statusline = {
-    theme = "vscode_colored",
+    theme = "minimal",
+    separator_style = "round",
   },
   hl_override = {
     -- Comment = { italic = true },
@@ -44,6 +46,5 @@ M.ui = {
 
 M.lsp = {
   signature = false,
-  semantic_tokens = true,
 }
 return M
