@@ -1,14 +1,5 @@
 return {
   {
-    "andreadev-it/shade.nvim",
-    event = "VeryLazy",
-    config = function()
-      require("shade").setup {
-        exclude_filetypes = { "NvimTree" },
-      }
-    end,
-  },
-  {
     "jvgrootveld/telescope-zoxide",
     lazy = true,
     specs = {
