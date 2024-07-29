@@ -5,7 +5,7 @@
 local M = {}
 
 M.ui = {
-  theme = "everforest",
+  theme = "github_light",
   -- transparency = true,
   cmp = {
     style = "atom_colored",

@@ -29,7 +29,6 @@ map("n", "<leader>fn", "<cmd>NoiceTelescope<cr>", { desc = "Telescope find noice
 -- nvimtree
 map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "nvimtree toggle window" })
 map("n", "<C-n>", "<cmd>NvimTreeFocus<CR>", { desc = "nvimtree focus window" })
-map("n", "<C-p>", require("fzf-lua").files, { desc = "Fzf Files" })
 map("n", "<leader>fm", "<cmd>Telescope zoxide list<cr>", { desc = "Find directories" })
 map("n", "<leader>fe", "<cmd>Telescope file_browser<cr>", { desc = "Open file browser" })
 

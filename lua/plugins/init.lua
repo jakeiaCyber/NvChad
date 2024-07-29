@@ -12,14 +12,6 @@ return {
     },
   },
   {
-    "ibhagwan/fzf-lua",
-    event = "VeryLazy",
-    dependencies = { "nvim-tree/nvim-web-devicons" },
-    config = function()
-      require("fzf-lua").setup {}
-    end,
-  },
-  {
     "hrsh7th/nvim-cmp",
     event = "VeryLazy",
     opts = {
